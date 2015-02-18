@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Day"
+        android:id="@+id/forecast_day"
+        android:textColor="#ff79e0ff"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="51dp"
+        android:layout_height="50dp"
+        android:id="@+id/forecast_image"
+        android:src="@drawable/ic_launcher"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Conditions"
+        android:id="@+id/forecast_conditions"
+        android:textColor="#ff79e0ff"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Min/Max temp"
+        android:id="@+id/forecast_temperatures"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Min/Max WindSpeed"
+        android:id="@+id/forecast_wind_speeds"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Min/Max Humidity"
+        android:id="@+id/forecast_humidity"
+        android:layout_marginLeft="5dp" />
+</LinearLayout>
