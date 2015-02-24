@@ -1,5 +1,6 @@
 package com.example.mtonkov.weather;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.location.Address;
 import android.location.Geocoder;
@@ -11,7 +12,6 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -38,7 +38,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -68,7 +67,6 @@ public class MapActivity extends FragmentActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
         setUpMapIfNeeded();
-
 
         initGoogleApiClient();
         initLocationUpdateRequest();
@@ -157,7 +155,7 @@ public class MapActivity extends FragmentActivity implements
     }
 
     private BriefWeatherInfoModel getBriefWeatherInfo(String forecast) {
-        BriefWeatherInfoModel result= new BriefWeatherInfoModel();
+        BriefWeatherInfoModel result = new BriefWeatherInfoModel();
 
         try {
             JSONObject briefForecast = new JSONObject(forecast).getJSONObject("current_observation");
@@ -248,7 +246,7 @@ public class MapActivity extends FragmentActivity implements
                         TextView tvDegrees = (TextView) v.findViewById(R.id.tv_degrees);
 
                         tvLocation.setText(briefWeatherData.getLocation());
-                        tvDegrees.setText(briefWeatherData.getTemperature() + " C");
+                        tvDegrees.setText(briefWeatherData.getTemperature() + "° C");
 
                         return v;
                     }
@@ -276,10 +274,12 @@ public class MapActivity extends FragmentActivity implements
     @Override
     public void onConnectionSuspended(int i) {
     }
+
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         return super.onCreateOptionsMenu(menu);

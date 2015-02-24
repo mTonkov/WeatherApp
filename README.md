@@ -1,0 +1,3 @@
+This weather application is intended to show the user some weather information about a specific location. When the application is started, location is retrieved, a pointer on the map is being set and a HTTP request to retrieve weather data is made. 
+One tap on the pointer shows an info window with some brief information (current location name and temperature). When the info window is tapped, a new activity is shown with detailed information about the weather and a forecast for the next 4 days. 
+As the weather for specific area/city is mostly the same, tapping within the area will not make another request. To select a new location, user should first de-select the current one by long-press on the pointer.

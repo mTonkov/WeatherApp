@@ -12,7 +12,7 @@
         android:id="@+id/forecast_day"
         android:textColor="#ff79e0ff"
         android:layout_marginLeft="5dp"
-        android:textStyle="bold" />
+        android:textSize="14dp" />
 
     <ImageView
         android:layout_width="51dp"
@@ -29,7 +29,7 @@
         android:id="@+id/forecast_conditions"
         android:textColor="#ff79e0ff"
         android:layout_marginLeft="5dp"
-        android:textStyle="bold" />
+        android:textSize="14dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -37,7 +37,8 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Min/Max temp"
         android:id="@+id/forecast_temperatures"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,7 +46,8 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Min/Max WindSpeed"
         android:id="@+id/forecast_wind_speeds"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -53,5 +55,6 @@
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="Min/Max Humidity"
         android:id="@+id/forecast_humidity"
-        android:layout_marginLeft="5dp" />
+        android:layout_marginLeft="5dp"
+        android:textSize="14dp" />
 </LinearLayout>

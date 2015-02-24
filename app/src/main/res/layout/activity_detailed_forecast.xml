@@ -24,8 +24,9 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="170dp"
-            android:layout_height="fill_parent">
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
 
             <TextView
             android:id="@+id/tv_main_conditions"
@@ -34,7 +35,6 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="10dp"
             android:layout_marginTop="44dp"
             android:text="Conditions"
             android:textAppearance="?android:attr/textAppearanceMedium"
@@ -47,7 +47,6 @@
                 android:id="@+id/tv_main_degrees"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:text="22"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:gravity="fill_horizontal"
@@ -59,7 +58,6 @@
                 android:id="@+id/tv_main_feelsLike"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="10dp"
                 android:text="Feels like"
                 android:gravity="fill_horizontal"
                 android:layout_marginLeft="15dp" />
@@ -71,7 +69,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/tv_main_feelsLike"
-                android:layout_marginBottom="10dp"
                 android:text="Wind speed"
                 android:gravity="fill_horizontal"
                 android:layout_marginLeft="15dp" />
@@ -83,7 +80,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/tv_main_Wind"
-                android:layout_marginBottom="10dp"
                 android:text="Pressure"
                 android:gravity="fill_horizontal"
                 android:layout_marginLeft="15dp" />
@@ -95,7 +91,6 @@
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/tv_main_pressure"
-                android:layout_marginBottom="10dp"
                 android:text="Humidity"
                 android:gravity="fill_horizontal"
                 android:layout_marginLeft="15dp" />
@@ -106,26 +101,27 @@
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent">
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <ImageView
-                android:layout_width="180dp"
+                android:layout_width="match_parent"
                 android:layout_height="160dp"
                 android:id="@+id/img_main"
-                android:layout_marginTop="50dp" />
+                android:layout_marginTop="40dp" />
         </LinearLayout>
     </LinearLayout>
 
     <GridView
         android:layout_width="match_parent"
-        android:layout_height="260dp"
+        android:layout_height="match_parent"
         android:id="@+id/forecast_gridView"
         android:layout_gravity="center_horizontal"
         android:numColumns="4"
         android:choiceMode="none"
         android:background="#9b1c74ff"
         android:alpha="100"
-        android:layout_marginTop="50dp" />
+        android:layout_marginTop="10dp" />
 
 </LinearLayout>
